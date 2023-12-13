@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar_admin') %>
+
+
+<section id="SignIn_Section">
+    <img class="backgroundImg" src="images/backgroundLogin.jpg" alt="">
+    <div class="signin">
+        <div class="content">
+            <h2>Register</h2>
+            <form class="form" action="/register" method="post">
+
+            <div class="inputBox">
+            <input type="text" placeholder="Enter username" name="username"><i>Username</i>
+            </div>
+
+            <div class="inputBox"> 
+                <input type="password" placeholder="Enter Password" name="password"><i>Password</i>
+            </div> 
+
+            
+            <div class="inputBox">
+                <input type="submit" value="Register" class="btn">
+            </div>
+            <p class="register_para">Try logging in after registering</p>
+        </form>
+        </div>
+        
+    </div>
+</section>
+

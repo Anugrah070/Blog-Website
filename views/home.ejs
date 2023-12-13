@@ -1,0 +1,49 @@
+<!-- -->
+
+    <!--  -->
+    <section class="hero_heading">
+        <h1>Discover the World, One Blog at a Time</h1>
+
+        <div class="categories">
+            <li><a href="#"></a>All</li>
+            <li><a href=""></a>Tech</li>
+            <li><a href=""></a>Fashion</li>
+            <li>ihsoihoisj</li>
+            <li>ihsoihoisj</li>
+            <li>ihsoihoisj</li>
+            <li>ihsoihoisj</li>
+            <li>ihsoihoisj</li>
+        </div>
+
+    </section>
+    
+    <section class="Blogs_section">
+        <div class="blogs">
+            <% data.forEach(post => { %>
+                <li>
+                <a href="/post/<%=post._id%>">
+                <h3><%= post.author %></h3> <span><%= post.createdAt.toDateString() %></span>
+                <h1> <%= post.title %></h1>
+                <p><%= post.snippet %></p>
+
+                
+                </a>
+            </li>
+            
+            <div class="underline"></div>
+            <% }) %>
+
+            <% if (nextPage !== null) { %>
+                
+                <a href="/?page=<%= nextPage %>">&lt;View older Posts</a>
+
+            <% } %> 
+            
+        </div>
+        
+        <div class="blogs_right">
+            see the blogs you saved
+        </div>
+        
+        
+    </section>

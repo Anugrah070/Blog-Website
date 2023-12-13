@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Aldrich', sans-serif;
+    font-family: 'Montserrat', sans-serif; */
+    
+
+}
+
+.hero_heading h1{
+    font-size: 50px;
+    font-family: 'Arvo', serif;
+}
+
+/* NAVBAR SECTION */
+
+.navbar{
+    background-color: black;
+    box-shadow: -2px 8px 15px 4px #49484836;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    justify-content: space-between;
+    
+}
+
+/* RIGHT SECTION */
+
+
+
+.navbar_right ul{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    
+}
+
+.navbar_right ul li {
+    
+    padding: 10px 20px;
+    list-style: none;
+    text-decoration: none;
+    
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+.navbar_right ul li:hover{
+    box-shadow: 5px 3px 4px 1px #f8f7f7 ; 
+}
+
+.navbar_right ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* LEFT SECTION */
+
+.navbar_left{
+    display: flex;
+    
+    
+}
+
+
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+  }
+
+.searchbar input{
+    
+    color: white;
+    background-color: rgba(154, 132, 132, 0.112);
+    border-radius: 10px;
+    padding: 8px 0;
+    border: 0;
+    outline: 0;
+}
+
+
+
+/* HERO HEADING */
+
+.hero_heading{
+   
+    
+    text-align: center;
+    
+}
+
+.hero_heading h1{
+    padding: 38px;
+    background-color: #f8773a;
+}
+
+.categories{
+    background-color: #ededed;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.categories li{
+    padding: 20px;
+    list-style: none;
+}
+
+
+/* BLOGS SECTION */
+
+.blogs{
+    margin-top: 60px;
+    font-size: 20px;
+    width: 60%;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+.blogs p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.Blogs_section{
+    background-color: #ededed;
+    display: flex;
+     justify-content: space-evenly;
+    
+}
+
+.Blogs_section li{
+    list-style: none;
+}
+
+.Blogs_section li a{
+    
+    text-decoration: none;
+    color: black;
+}
+
+.underline{
+
+    height: 2px;
+    width: 100%;
+    box-shadow: 2px 6px 10px 1px #0c0c0c36;
+}
+
+
+/* POST PAGE */
+
+body{
+    background-color: #ededed;
+}
+
+.post_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 200px;
+    gap: 40px;
+    
+}
+
+.post_title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    
+}
+
+.post_body{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post_middle{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+/* Search page */
+
+.searchPage_heading{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+
+/* SIGN IN PAGES */
+
+.backgroundImg{
+    
+    width: 100%;
+    height: 90.6vh;
+    z-index: -1;
+    
+}
+   
+#SignIn_Section{
+    
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+section .signin
+{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 150px;
+  position: absolute;
+  width: 400px;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+}
+section .signin .content 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+section .signin .content h2 
+{
+  font-size: 2em;
+  color: #f8773a;
+  text-transform: uppercase;
+}
+section .signin .content .form 
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+section .signin .content .form .inputBox
+{
+  position: relative;
+  width: 100%;
+}
+section .signin .content .form .inputBox input 
+{
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+section .signin .content .form .inputBox i 
+{
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #aaa;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.signin .content .form .inputBox input:focus ~ i,
+.signin .content .form .inputBox input:valid ~ i
+{
+  transform: translateY(-7.5px);
+  font-size: 0.8em;
+  color: #fff;
+}
+.signin .content .form .links 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.signin .content .form .links a 
+{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s all ease-in-out;
+}
+
+.signin .content .form .links a:hover{
+    color: rgb(227, 185, 107);
+}
+.signin .content .form .links a:nth-child(2)
+{
+  color: #f8773a;
+  font-weight: 600;
+}
+.signin .content .form .inputBox input[type="submit"]
+{
+  padding: 10px;
+  background: #f8773a;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+input[type="submit"]:active
+{
+  opacity: 0.6;
+}
+@media (max-width: 900px)
+{
+  section span 
+  {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+}
+@media (max-width: 600px)
+{
+  section span 
+  {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}
+
+.register_para{
+  color: white;
+}
+
+
+/* WRITE PAGE */
+
+.writePage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.writePage_input input[type=text]{
+  border-bottom: 2px solid red;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 45px;
+  padding: 50px 30px;
+}
+
+.writePage_section{
+  margin: 70px 0;
+}
+
+
+.writePage textarea{
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 50px 25px;
+  box-sizing: border-box;
+  resize: none;
+  outline: none;
+}
+
+.writePage_form{
+  gap: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.orange_btn{
+  border: none;
+  color: white;
+  border-radius: 20px;
+  font-weight:500px;
+  padding: 20px 50px;
+  font-family: SST ;
+  background-color: #f8773a;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.orange_btn:hover{
+  background-color: #f8773a;
+  box-shadow: 0 0 0 4px white ,0 0 0 6px #f8773a;
+}
+
+
+.red_btn{
+  border: none;
+  color: white;
+  border-radius: 20px;
+  font-weight:500px;
+  padding: 20px 50px;
+  font-family: SST ;
+  background-color: rgb(187, 47, 47);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.red_btn:hover{
+  background-color: red;
+  box-shadow: 0 0 0 4px white ,0 0 0 6px red;
+}
+

@@ -1,0 +1,18 @@
+
+    <div class="post_container">
+        <h1 class="post_title"><%=data.title %></h1>
+
+        <div class="post_middle">
+            <h2 class="post_author">By-<%= data.author %></h2>
+             <h2 class="post_createdAt"><%= data.createdAt.toDateString() %></h2>
+        </div>
+
+        <p class="post_body"><%= data.body %></p>
+
+        <form action="/delete_post/<%= data._id %>?method=DELETE" method="post">
+            <input  type="submit" value="DELETE" class=" red_btn"></input>
+        </form>
+    </div>
+
+
+

@@ -1,0 +1,23 @@
+
+
+
+<section class="Blogs_section">
+    <div class="blogs">
+    <h2 class="searchPage_heading">Search results</h2>
+    <% data.forEach(post => { %>
+        <li>
+
+        <a href="/post/<%=post._id%>">
+        <h3><%= post.author %></h3> <span><%= post.createdAt.toDateString() %></span>
+        <h1> <%= post.title %></h1>
+        <p><%= post.snippet %></p>
+
+        
+        </a>
+    </li>
+    
+    <div class="underline"></div>
+    <% }) %>
+
+</div>
+</section>
